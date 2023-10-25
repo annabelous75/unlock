@@ -1,0 +1,193 @@
+.img-start-travel{
+    display:none;
+    @include tablet{
+        display: block;
+        width:602px;
+        height:768px;
+    }
+    @include desktop{
+        display: block;
+        width:704px;
+        height:840px;
+
+    }
+}
+.start_travel_title{
+    font-family: 'Jomolhari';
+font-size: 32px;
+font-weight: 400;
+line-height: 45px;
+letter-spacing: 0.01em;
+text-align: left;
+color: #ffffff;
+margin-bottom: 24px;
+}
+.start_travel_text{
+font-family: 'Lato';
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.01em;
+text-align: left;
+color:#ffffff;
+width:320px;
+margin-bottom: 20px;
+}
+.start_travel_flex{
+    display: flex;
+    background-color:#141A19;;
+    width:375px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include tablet{
+        width:768px;
+        padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    @include desktop{
+        width:1440px;
+        padding-top: 100px;
+    padding-bottom: 100px;
+    }
+}
+
+.forma{
+    display: block;
+    width:375px;
+    padding-left: 10px;
+    @include tablet{
+        display:flex;
+        position: absolute;
+        top:660%;
+        left:5%;
+      width:755px;
+        height:515px;
+        background-color:#141A19;;
+        border:1px solid white;
+        padding: 69px 20px 69px 20px;
+        gap:15px;
+    }
+    @include desktop{
+        display:flex;
+        position: absolute;
+        top:650%;
+        left:30%;
+        width:950px;
+        height:450px;
+        background-color:#141A19;;
+        border:1px solid white;
+        padding: 96px 180px 96px 140px;
+        gap:32px;
+    }
+}
+.online-input{
+ 
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color:#141A19;;
+    outline: 0;
+    margin-bottom: 12px;
+    padding-top: 12px;
+        padding-right: 54px;
+        padding-bottom: 12px;
+        padding-left: 14px;
+        min-height: 40px;
+        color:#ffffff;
+    @include tablet{
+        width:100%;
+        padding-top: 12px;
+        padding-right: 64px;
+        padding-bottom: 12px;
+        padding-left: 14px;
+        min-height: 40px;
+    }
+    @include desktop{
+        width:100%;
+        padding-top: 12px;
+        padding-right: 84px;
+        padding-bottom: 12px;
+        padding-left: 14px;
+        min-height: 40px;
+    }
+}
+.online-label{
+font-family: 'Jomolhari';
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0.01em;
+text-align: left;
+color:#ffffff;
+}
+.online-text{
+    padding: 14px 140px 40px 12px;
+    border-radius:4px;
+    background-color:#141A19;
+    border: 1px solid #ffffff;
+    margin-bottom: 32px;
+    @include tablet{
+        padding: 14px 230px 14px 12px;
+        border-radius:4px;
+        background-color:#141A19;
+        border: 1px solid #ffffff;
+        margin-bottom: 32px;
+    }
+    @include desktop{
+        padding: 14px 230px 14px 12px;
+    border-radius:4px;
+    background-color:#141A19;
+    border: 1px solid #ffffff;
+    margin-bottom: 32px;
+    }
+}
+.online-btn{
+    padding:16px 130px 16px 130px;
+    border-radius: 4px;
+    color:var(--primary-color);
+    background-color:var(--button-color);
+    font-family: 'Jomolhari';
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.01em;
+text-align: center;
+cursor: pointer;
+&:hover{
+    background-color:transparent;
+    border:1px solid #ffffff
+}
+@include tablet{
+    padding:16px 160px 16px 170px;
+    border-radius: 4px;
+    color:var(--primary-color);
+    background-color:var(--button-color);
+    font-family: 'Jomolhari';
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.01em;
+text-align: center;
+cursor: pointer;
+&:hover{
+    background-color:transparent;
+    border:1px solid #ffffff
+}
+@include desktop{
+    padding:16px 160px 16px 170px;
+    border-radius: 4px;
+    color:var(--primary-color);
+    background-color:var(--button-color);
+    font-family: 'Jomolhari';
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.01em;
+text-align: center;
+cursor: pointer;
+&:hover{
+    background-color:transparent;
+    border:1px solid #ffffff
+}
+}
+}
+}

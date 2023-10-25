@@ -1,0 +1,229 @@
+.hero-content{
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../images/hero_img_mob.jpg);
+      background-size: cover; 
+      background-repeat: no-repeat;
+    flex-grow: 1;
+    height: 812px;
+    width:375px;
+@include tablet{
+    background-color: var(--background-color);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/hero_img_tablet.jpg);
+    background-size: cover; 
+  flex-grow: 1;
+  height: 1008px;
+  width:768px;
+}
+@include desktop{
+    background-color: var(--background-color);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(36, 41, 58, 0.2)
+    ),
+    url(../images/hero_img.jpg);
+    background-size: cover; 
+  flex-grow: 1;
+  height: 800px;
+  width:1440px;
+}
+}
+.hero-icon{
+    width: 24px;
+    height: 24px;
+}
+.hero-title{
+    padding-top: 144px;
+    font-family: 'Jomolhari';
+font-size: 24px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0.01em;
+text-align: center;
+color:var(--primary-color)    ;
+    @include tablet{
+        padding-top: 229px;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 67px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        padding-top: 230px;
+    }
+    @include desktop{
+        font-family: 'Jomolhari';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 67px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        padding-top: 117px;
+    }
+}
+.title-span{
+    font-family: 'Jomolhari';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    float: right;
+    margin-right:29px;
+    
+    @include tablet{
+        font-family: 'Jomolhari';
+        font-size: 128px;
+        line-height: 179px;
+        letter-spacing: 0.01em;
+        margin-right:80px;
+    }
+    @include desktop{
+        font-family: 'Jomolhari';
+        font-size: 128px;
+        line-height: 179px;
+        letter-spacing: 0.01em;
+        margin-right: 380px;
+    }
+}
+.title-span::after{
+    display: none;
+    @include tablet{
+        content: 'Ukraine';
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -80px;
+    left: 0;
+    display: block;
+    transform: scaleY(-1);
+    opacity:0.2;
+    backdrop-filter: blur(5px);
+        bottom: -108px;
+    }
+    @include desktop{
+        content: 'Ukraine';
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -80px;
+    left: 0;
+    display: block;
+    transform: scaleY(-1);
+    opacity:0.2;
+    backdrop-filter: blur(5px);
+        bottom: -108px;
+    }
+    
+}
+.of{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.span-title{
+    font-family: 'Jomolhari';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    transform: rotate(180deg); 
+        transform-origin: center;
+    color:rgba(255, 255, 255, 0.3);
+    @include tablet{
+        font-family: 'Jomolhari';
+        font-size: 128px;
+        font-weight: 400;
+        line-height: 179px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        transform: rotate(180deg); 
+            transform-origin: center;
+        color:rgba(255, 255, 255, 0.3);
+    }
+    @include desktop{
+        font-family: 'Jomolhari';
+        font-size: 128px;
+        font-weight: 400;
+        line-height: 179px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        transform: rotate(180deg); 
+            transform-origin: center;
+        color:rgba(255, 255, 255, 0.3);
+    }
+}
+.hero-soc{
+    margin-top:250px;
+    @include tablet{
+        position: absolute;
+        margin-left:768px;
+        margin-top:80px;
+    }
+    @include desktop{
+        position: absolute;
+        margin-left:1350px;
+        margin-top:80px;
+    }
+}
+.hero-list{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    @include tablet{
+        display: block;
+    }
+    @include desktop{
+        display: block;
+    }
+}
+.hero-item{
+    margin-right: 10px;
+    @include tablet{
+        margin-top: 5px;
+    }
+    @include desktop{
+        margin-top: 5px;
+    }
+}
+.button{
+    padding:16px 52px 16px 52px;
+    border-radius: 4px;
+    color:var(--primary-color);
+    background-color:var(--button-color);
+    font-family: 'Jomolhari';
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.01em;
+text-align: center;
+cursor: pointer;
+&:hover{
+    background-color:transparent;
+    border:1px solid #ffffff
+}
+}
+.button-flex{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 150px;
+@include tablet{
+    margin-top: 230px;
+}
+@include desktop{
+    margin-top: 230px;
+}
+}
