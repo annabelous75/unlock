@@ -200,6 +200,20 @@ a {
   opacity: 0;
   pointer-events: none;
 }
+@media screen and (min-width: 768px) {
+  .mob__menu.is-hidden {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .mob__menu.is-hidden {
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow-y: auto;
+}
 
 .menu__button__close {
   display: block;
@@ -211,7 +225,7 @@ a {
   border: 0;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 1000ms cubic-bezier(0.33, 0, 0.2, 1);
 }
 .menu__button__close:hover .close__icon, .menu__button__close:focus .close__icon {
   fill: cadetblue;
@@ -238,7 +252,7 @@ a {
   border: 0;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__button__clos:hover .close__icon, .menu__button__clos:focus .close__icon {
   fill: cadetblue;
@@ -309,7 +323,7 @@ a {
   background-repeat: no-repeat;
   flex-grow: 1;
   height: 812px;
-  width: 375px;
+  width: 100vw;
 }
 @media screen and (min-width: 768px) {
   .hero-content {
@@ -318,7 +332,7 @@ a {
     background-size: cover;
     flex-grow: 1;
     height: 1008px;
-    width: 768px;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -328,7 +342,7 @@ a {
     background-size: cover;
     flex-grow: 1;
     height: 800px;
-    width: 1440px;
+    width: 100vw;
   }
 }
 
